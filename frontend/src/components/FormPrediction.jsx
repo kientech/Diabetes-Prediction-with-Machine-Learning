@@ -26,7 +26,7 @@ const FormPrediction = ({ setResult }) => {
     try {
       console.log("Sending request with data:", formData);
       const response = await axios.post(
-        "https://diabetes-prediction-with-machine-learning.onrender.com",
+        "https://diabetes-prediction-harb.onrender.com/prediction",
         formData,
         {
           headers: {
@@ -54,7 +54,10 @@ const FormPrediction = ({ setResult }) => {
       <form onSubmit={handleSubmit} className="mt-4">
         <div className="flex items-center justify-between gap-5">
           <div className="w-full">
-            <label htmlFor="Pregnancies" className="block font-base text-sm py-1">
+            <label
+              htmlFor="Pregnancies"
+              className="block font-base text-sm py-1"
+            >
               Pregnancies
             </label>
             <input
@@ -82,7 +85,10 @@ const FormPrediction = ({ setResult }) => {
         </div>
 
         <div className="w-full my-4">
-          <label htmlFor="BloodPressure" className="block font-base text-sm py-1">
+          <label
+            htmlFor="BloodPressure"
+            className="block font-base text-sm py-1"
+          >
             BloodPressure
           </label>
           <input
@@ -97,7 +103,10 @@ const FormPrediction = ({ setResult }) => {
 
         <div className="flex items-center justify-between gap-5">
           <div className="w-full">
-            <label htmlFor="SkinThickness" className="block font-base text-sm py-1">
+            <label
+              htmlFor="SkinThickness"
+              className="block font-base text-sm py-1"
+            >
               SkinThickness
             </label>
             <input

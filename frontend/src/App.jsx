@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import SideBar from "./components/SideBar";
 import FormPrediction from "./components/FormPrediction";
 import Healthy from "./components/Healthy";

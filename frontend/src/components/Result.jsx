@@ -1,5 +1,4 @@
 import React from "react";
-import { HiChatAlt2 } from "react-icons/hi";
 
 const Result = ({ result }) => {
   return (
