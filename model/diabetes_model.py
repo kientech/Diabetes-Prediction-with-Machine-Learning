@@ -1,11 +1,10 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-import pickle
 import json
-import numpy as np
-from fastapi.middleware.cors import CORSMiddleware
+import pickle
 
-from sklearn.preprocessing import StandardScaler
+import numpy as np
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 app = FastAPI()
 

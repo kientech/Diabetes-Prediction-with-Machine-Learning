@@ -26,7 +26,7 @@ const FormPrediction = ({ setResult }) => {
     try {
       console.log("Sending request with data:", formData);
       const response = await axios.post(
-        "http://localhost:8000/prediction",
+        "https://diabetes-prediction-with-machine-learning.onrender.com",
         formData,
         {
           headers: {
