@@ -4,8 +4,12 @@ import pickle
 import json
 import numpy as np
 from fastapi.middleware.cors import CORSMiddleware
-
 from sklearn.preprocessing import StandardScaler
+import logging
+from fastapi.logger import logger
+
+logger.setLevel(logging.INFO)
+logger.info("FastAPI app started")
 
 app = FastAPI()
 
